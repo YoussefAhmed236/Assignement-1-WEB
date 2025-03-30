@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="monitors, gaming, streaming, Monito">
+        <meta name="description"
+            content="Monito offers high-quality monitors for gaming, streaming, and professional work.">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./style.css/style_enquire.css">
+        <title>Enquire</title>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="nav1">
+                <div class="logo">
+                    <img src="./Images/Logo.png" alt="Logo">
+                    <p>monito</p>
+                </div>
+                <ul>
+                    <li><a href="./homepage.html">Home</a></li>
+                    <li><a href="./product.html">Products</a></li>
+                    <li><a href="./enquire.html">Enquire</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./enhancement.html">Enhancements</a></li>
+                    <li><a href="./reference.html">Reference</a></li>
+                </ul>
+            </nav>
+        </div>
+        <header><h1>Thank You For choosing Us</h1>
+            <h2>Please fill these information to continue the payment</h2>
+        </header>
+        <form action="https://mercury.swin.edu.au/it000000/formtest.php"
+            method="Post">
+            <!--i used post because if i want to send senstive info -->
+            <fieldset class="first">
+                <legend>Personal information</legend>
+                <div class="input_container">
+                    <label for="name">First name</label>
+                    <input type="text" id="name" name="First-name"
+                        maxlength="25" title="Please enter characters only"
+                        pattern="[A-Za-z]+" placeholder="Enter your first name"
+                        required>
+                    <span class="icon"></span>
+                    <label for="name2">Last name</label>
+                    <input type="text" name="last-name" id="name2"
+                        title="Please enter characters only" pattern="[A-Za-z]+"
+                        maxlength="25"
+                        placeholder="Enter your last name"
+                        required>
+                    <span class="icon"></span>
+                    <br>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"
+                        title="enter a valid email address (e.g. : user@example.com)"
+                        placeholder="Enter your email"
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                        required>
+                    <span class="icon"></span>
+                </div>
+            </fieldset>
+            <fieldset class="second">
+                <legend>Address information</legend>
+                <div class="input_container">
+                    <label for="street_address">Street address</label>
+                    <input type="text" id="street_address" name="street_address"
+                        required minlength="10"
+                        maxlength="40"
+                        title="Plase enter an exsit street address"
+                        placeholder="Enter your street address"
+                        pattern="^[A-Za-z0-9 ]+$">
+                    <span class="icon"></span>
+                    <label for="Suburb_Town">Suburb/Town</label>
+                    <input type="text" id="Suburb_Town" name="Suburb/Town"
+                        maxlength="20"
+                        required
+                        pattern="^[A-Za-z0-9 ]+$"
+                        title="Enter your town or suburb"
+                        placeholder="Please enter a valid Town or Suburb">
+                    <span class="icon"></span>
+                </div>
+                <br>
+                <label for="state">State</label>
+                <select name="state" id="state" required>
+                    <option value>Please Select</option>
+                    <option value="VIC">VIC</option>
+                    <option value="NSW">NSW</option>
+                    <option value="QLD">QLD</option>
+                    <option value="NT">NT</option>
+                    <option value="WA">WA</option>
+                    <option value="SA">SA</option>
+                    <option value="TA">TA</option>
+                    <option value="ACT">ACT</option>
+                </select>
+                <div class="input_container">
+                    <label for="Postcode">Postcode</label>
+                    <input type="text" required id="Postcode" name="Postcode"
+                        maxlength="4"
+                        title="Enter your post code"
+                        placeholder="Please enter valid and correct post code"
+                        pattern="\d{4}">
+                    <span class="icon"></span>
+                    <br>
+                    <label for="Phone_number">Phone number</label>
+                    <input type="text" required id="Phone_number"
+                        name="Phone_number"
+                        maxlength="10"
+                        title="Please enter a 10-digit phone number (numbers only)"
+                        placeholder="Enter 10-digit phone number"
+                        pattern="\d{10}">
+                    <span class="icon"></span>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Preferred Contact</legend>
+                <input type="radio" id="phone" name="Preferred_Contact"
+                    value="phone" required>
+                <label for="phone">phone</label>
+                <input type="radio" id="Email" name="Preferred_Contact"
+                    value="email" required>
+                <label for="Email">Email</label>
+                <input type="radio" id="Post" name="Preferred_Contact"
+                    value="post" required>
+                <label for="Post">Post</label>
+            </fieldset>
+            <br>
+            <div class="choice">
+                <label for="monitorModel">Choose from our range:</label>
+                <select name="monitor_model" id="monitorModel" required>
+                    <option value>-- Please select a model --</option>
+                    <optgroup label="Gaming Monitors">
+                        <option value="MSI MPG321URX QD-OLED">MSI MPG321URX
+                            QD-OLED</option>
+                        <option value="MSI MPG 321URXW QD-OLED">MSI MPG 321URXW
+                            QD-OLED</option>
+                        <option value="MSI MAG 321UPX QD-OLED">MSI MAG 321UPX
+                            QD-OLED</option>
+                    </optgroup>
+                    <optgroup label="Moderate Monitors">
+                        <option value="Acer Nitro XV275K P3">Acer Nitro XV275K
+                            P3</option>
+                        <option value="Acer Nitro XV275K">Acer Nitro
+                            XV275K</option>
+                        <option value="ACER XV275U P3">ACER XV275U P3</option>
+                        <option value="ACER XV275U V">ACER XV275U V</option>
+                    </optgroup>
+                    <optgroup label="Low Price Monitors">
+                        <option value="LG 27GP850-B">LG 27GP850-B</option>
+                        <option value="LG 27GP83B-B">LG 27GP83B-B</option>
+                    </optgroup>
+                </select>
+                <p class="fea">Choose from our features (optional):</p>
+                <input type="checkbox" name="hdr" id="hdr">
+                <label for="hdr">HDR Support</label>
+                <input type="checkbox" name="HDMI" id="HDMI">
+                <label for="HDMI">HDMI Support</label>
+                <input type="checkbox" name="g-sync" id="G-Sync">
+                <label for="G-Sync">G-Sync</label>
+                <input type="checkbox" name="curved" id="Curved_Screen">
+                <label for="Curved_Screen">Curved Screen</label>
+            </div>
+            <p class="opp">If you are facing any problems, please write it down
+                here.</p>
+            <textarea name="comments" id="comments"
+                placeholder="Write Description of your problem here.."
+                cols="120"
+                rows="10"></textarea>
+            <button type="submit">Submit</button>
+
+        </form>
+
+        <fieldset>
+            <aside>
+                <h3>About Our Company</h3>
+                <p>At Monito , we specialize in high-performance
+                    monitors for gamers, professionals, and home
+                    entertainment. With years of innovation, we bring
+                    cutting-edge display technology to enhance your visual
+                    experience.</p>
+                <p class="sp">What Makes Us Special</p>
+                <ul>
+                    <li>Best Quality Screens</li>
+                    <li>Affordable Prices</li>
+                    <li>Global shipping</li>
+                </ul>
+                <p></p>
+                <p class="link">Visit our website for the latest deals and
+                    updates!</p>
+                <a href="./homepage.html" class="button2">Click Here to Visit
+                    Our
+                    HomePage</a>
+            </aside>
+        </fieldset>
+        <footer>
+            <div class="social_media">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="./Images/facebook.png" alt="facebook"></a>
+
+                <a href="https://www.instagram.com/"
+                    target="_blank"><img src="./Images/instagram.png"
+                        alt="instagram"></a>
+                <a href="https://x.com/home" target="_blank">
+                    <img src="./Images/twitter-alt-circle.png" alt="X">
+                </a>
+                <a href="mailto:105704598@student.swin.edu.au" target="_blank">
+                    <img src="./Images/envelope.png" alt="Email">
+
+                </a>
+                <a href="tel:+61402207725" target="_blank">
+                    <img src="./Images/whatsapp.png" alt="whatsapp">
+                </a>
+            </div>
+            <p>© 2025 Monito. All Rights Reserved.</p>
+            <p>created by:Youssef Ahmed</p>
+        </footer>
+    </body>
+</html>
